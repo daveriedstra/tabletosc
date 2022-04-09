@@ -1,6 +1,5 @@
-CFLAGS=-I. --std=c99 -Wall
-LINK=./libusb-1.0.0.dylib
+CFLAGS=-I. --std=c99 -Wall -D_GNU_SOURCE
+LINK=-lusb -lusb-1.0
 
 main: main.c
 	$(CC) $(CFLAGS) $< -o $@ $(LINK)
-	install_name_tool -add_rpath . ./main

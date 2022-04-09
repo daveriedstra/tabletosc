@@ -1,7 +1,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <libusb.h>
+#include <libusb-1.0/libusb.h>
 #include <assert.h>
 #include <string.h>
 
